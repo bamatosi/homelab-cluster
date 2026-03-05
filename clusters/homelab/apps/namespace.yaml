@@ -1,0 +1,5 @@
+# Namespace creation managed by flux-system kustomization
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: apps
