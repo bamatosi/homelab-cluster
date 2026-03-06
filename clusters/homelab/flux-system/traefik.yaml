@@ -26,12 +26,12 @@ spec:
   entryPoints:
     - web
   routes:
-    - match: PathPrefix(`/dashboard`) || PathPrefix(`/api`)
+    - match: Host('traefik.homelab')
       kind: Rule
       services:
         - name: api@internal
           kind: TraefikService
-      # TODO Enable basic-auth for dashboard
+      # TODO
       # middlewares:
       #   - name: basic-auth
       #     namespace: kube-system
