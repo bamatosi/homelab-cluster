@@ -17,22 +17,21 @@ spec:
     app.kubernetes.io/instance: traefik-kube-system
     app.kubernetes.io/name: traefik
 ---
-apiVersion: networking.k8s.io/v1
-kind: Ingress
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
 metadata:
-  name: traefik-ingress
+  name: dashboard
   namespace: kube-system
-  annotations:
-    spec.ingressClassName: traefik
 spec:
-  rules:
-    - host: traefik.homelab-box1
-      http:
-        paths:
-          - path: /
-            pathType: Prefix
-            backend:
-              service:
-                name: traefik-dashboard
-                port:
-                  number: 9000
+  entryPoints:
+    - web
+  routes:
+    - match: PathPrefix(`/dashboard`) || PathPrefix(`/api`)
+      kind: Rule
+      services:
+        - name: api@internal
+          kind: TraefikService
+      # TODO Enable basic-auth for dashboard
+      # middlewares:
+      #   - name: basic-auth
+      #     namespace: kube-system
