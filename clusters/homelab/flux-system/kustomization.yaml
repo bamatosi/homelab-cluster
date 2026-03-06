@@ -4,3 +4,4 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 - sealed-secrets-helm.yaml
+- traefik.yaml

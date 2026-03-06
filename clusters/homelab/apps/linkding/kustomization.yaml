@@ -4,4 +4,5 @@ resources:
 - pvc.yaml
 - deployment.yaml
 - service.yaml
+- strip-prefix-middleware.yaml
 - ingress.yaml

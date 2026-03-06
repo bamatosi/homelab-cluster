@@ -19,8 +19,8 @@ kubeseal --format=yaml --cert=pub-sealed-secrets.pem < basic-auth.yaml > basic-a
 Then commit `SealedSecret` to repo to create in the cluster and mount to the pod as any other secret
 
 ## Roadmap
-[] Storage - https://longhorn.io
+[X] Storage - https://longhorn.io
 [X] Sealed secrets
 [] Grafana and prometheus - for monitoring
-[] Traefik - ingress controller
+[X] Traefik - ingress controller
 [] Expose externally
