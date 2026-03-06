@@ -5,13 +5,14 @@ metadata:
   namespace: apps
   annotations:
     traefik.ingress.kubernetes.io/router.entrypoints: web
-    traefik.ingress.kubernetes.io/router.middlewares: apps-linkding-stripprefix@kubernetescrd
+    #traefik.ingress.kubernetes.io/router.middlewares: apps-linkding-stripprefix@kubernetescrd
 spec:
   ingressClassName: traefik
   rules:
-  - http:
+  - host: linkding.homelab
+    http:
       paths:
-      - path: /linkding
+      - path: /
         pathType: Prefix
         backend:
           service:
