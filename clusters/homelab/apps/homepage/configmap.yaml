@@ -21,7 +21,11 @@ data:
     \       @keyframes pulse {\n            0% { transform: scale(0.95); box-shadow:
     0 0 0 0 rgba(35, 134, 54, 0.7); }\n            70% { transform: scale(1); box-shadow:
     0 0 0 10px rgba(35, 134, 54, 0); }\n            100% { transform: scale(0.95);
-    box-shadow: 0 0 0 0 rgba(35, 134, 54, 0); }\n        }\n    </style>\n</head>\n<body>\n\n<pre>\n
+    box-shadow: 0 0 0 0 rgba(35, 134, 54, 0); }\n        }\n    
+    a {
+            color: rgba(88, 166, 255, 0.5);
+        }
+    </style>\n</head>\n<body>\n\n<pre>\n
     _______  _______ _________ _______  _______ _________          _           _        _______
     _________\n(       )(  ___  )\\__   __/(  ___  )(  ____ \\\\__   __/|\\     /||
     \\    /\\   ( (    /|(  ____ \\\\__   __/\n| () () || (   ) |   ) (   | (   )
@@ -34,4 +38,15 @@ data:
     )  \\  || (____/\\   | |   \n|/     \\||/     \\|   )_(   (_______)\\_______)\\_______/(_______)|_/
     \   \\/(_)|/    )_)(_______/   )_(   \n                                                                                                      \n
     \                                                              \n          --
-    [ matosiuk.net homelab cluster // established 2026 ] --\n</pre>"
+    [ matosiuk.net homelab cluster // established 2026 ] --\n</pre>
+    
+    <div class=\"info\">
+        <p>System:</p>
+        <p><a target=\"_blank\" href=\"longhorn.homelab\">Longhorn UI</a> | <a target=\"_blank\" href=\"traefik.homelab\">Traefik dashboard</a></p>
+    </div>
+
+    <div class=\"info\">
+        <p>Apps:</p>
+        <p><a target=\"_blank\" href=\"linkding.homelab\">Linkding</a></p>
+    </div>
+    "

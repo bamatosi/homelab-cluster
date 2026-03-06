@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matosiuk.net | K8s Cluster</title>
+    <style>
+        body {
+            background-color: #0d1117; /* Deep Blue-Black */
+            color: #58a6ff; /* Kubernetes Blue */
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        pre {
+            line-height: 1.2;
+            font-weight: bold;
+            text-shadow: 0 0 10px rgba(88, 166, 255, 0.5);
+        }
+
+        .info {
+            margin-top: 20px;
+            text-align: center;
+            color: #8b949e;
+        }
+
+        a {
+            color: rgba(88, 166, 255, 0.5);
+        }
+
+        .status-pulse {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #238636;
+            border-radius: 50%;
+            margin-right: 5px;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(35, 134, 54, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 10px rgba(35, 134, 54, 0); }
+            100% { transform: scale(0.95); box-shadow: 0 0 0 0 rgba(35, 134, 54, 0); }
+        }
+    </style>
+</head>
+<body>
+
+<pre>
+ _______  _______ _________ _______  _______ _________          _           _        _______ _________
+(       )(  ___  )\__   __/(  ___  )(  ____ \\__   __/|\     /|| \    /\   ( (    /|(  ____ \\__   __/
+| () () || (   ) |   ) (   | (   ) || (    \/   ) (   | )   ( ||  \  / /   |  \  ( || (    \/   ) (   
+| || || || (___) |   | |   | |   | || (_____    | |   | |   | ||  (_/ /    |   \ | || (__       | |   
+| |(_)| ||  ___  |   | |   | |   | |(_____  )   | |   | |   | ||   _ (     | (\ \) ||  __)      | |   
+| |   | || (   ) |   | |   | |   | |      ) |   | |   | |   | ||  ( \ \    | | \   || (         | |   
+| )   ( || )   ( |   | |   | (___) |/\____) |___) (___| (___) ||  /  \ \ _ | )  \  || (____/\   | |   
+|/     \||/     \|   )_(   (_______)\_______)\_______/(_______)|_/    \/(_)|/    )_)(_______/   )_(   
+                                                                                                      
+                                                               
+          -- [ matosiuk.net kubernetes home lab cluster // established feb 2026 ] --
+</pre>
+
+<div class="info">
+    <p>System:</p>
+    <p><a target="_blank" href="longhorn.homelab">Longhorn UI</a> | <a target="_blank" href="traefik.homelab">Traefik dashboard</a></p>
+</div>
+
+<div class="info">
+    <p>Apps:</p>
+    <p><a target="_blank" href="linkding.homelab">Linkding</a></p>
+</div>
+
+</body>
+</html>
