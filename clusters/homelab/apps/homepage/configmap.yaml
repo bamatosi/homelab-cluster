@@ -42,11 +42,11 @@ data:
     
     <div class=\"info\">
         <p>System:</p>
-        <p><a target=\"_blank\" href=\"longhorn.homelab\">Longhorn UI</a> | <a target=\"_blank\" href=\"traefik.homelab\">Traefik dashboard</a></p>
+        <p><a target=\"_blank\" href=\"http://longhorn.homelab\">Longhorn UI</a> | <a target=\"_blank\" href=\"http://traefik.homelab\">Traefik dashboard</a></p>
     </div>
 
     <div class=\"info\">
         <p>Apps:</p>
-        <p><a target=\"_blank\" href=\"linkding.homelab\">Linkding</a></p>
+        <p><a target=\"_blank\" href=\"http://linkding.homelab\">Linkding</a></p>
     </div>
     "
