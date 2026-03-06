@@ -26,7 +26,7 @@ spec:
   entryPoints:
     - web
   routes:
-    - match: PathPrefix(`/dashboard`) || PathPrefix(`/api`)
+    - match: Host(`traefik.homelab`)
       kind: Rule
       services:
         - name: api@internal
