@@ -4,3 +4,5 @@ resources:
 - namespace.yaml
 - helm-repository.yaml
 - helm-release.yaml
+- database-creds-sealed.yaml
+- pg-cluster.yaml

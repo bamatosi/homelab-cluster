@@ -1,0 +1,19 @@
+apiVersion: postgresql.cnpg.io/v1
+kind: Cluster
+metadata:
+  name: local-db
+  namespace: default
+spec:
+  instances: 2 
+  imageName: ghcr.io/cloudnative-pg/postgresql:16
+  
+  storage:
+    size: 20Gi
+    storageClass: longhorn
+
+  bootstrap:
+    initdb:
+      database: datalake
+      owner: datalake_user
+      secret:
+        name: database-creds
