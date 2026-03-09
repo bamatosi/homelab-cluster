@@ -4,4 +4,6 @@ resources:
 - gotk-components.yaml
 - gotk-sync.yaml
 - sealed-secrets-helm.yaml
-- traefik.yaml
+- traefik-service.yaml
+- traefik-ingress-route.yaml
+- traefik-helm-chart-configuration.yaml
