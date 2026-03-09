@@ -6,3 +6,4 @@ resources:
 - helm-release.yaml
 - database-creds-sealed.yaml
 - pg-cluster.yaml
+- pg-ingress-route-tcp.yaml
