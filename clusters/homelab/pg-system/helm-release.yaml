@@ -12,7 +12,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: cnpg-charts
-        namespace: flux-system
+        namespace: pg-system
   targetNamespace: pg-system
   values:
     resources:
