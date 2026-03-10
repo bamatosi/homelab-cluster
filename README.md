@@ -18,9 +18,18 @@ kubeseal --format=yaml --cert=pub-sealed-secrets.pem < basic-auth.yaml > basic-a
 ```
 Then commit `SealedSecret` to repo to create in the cluster and mount to the pod as any other secret
 
+# Posgres DB
+Access from the cluster
+```
+k run -i --tty --rm debug --image=postgres --env="PGHOST=local-db-rw.pg-system.svc.cluster.local" --env="PGPORT=5432" --env="PGUSER=datalake_user" --env="PGPASSWORD=<pass>>" -- bash
+psql -d datalake
+```
+
+To access from outside of the cluster use ip of the cluster (traefik ingress route tcp)
+
 ## Roadmap
 [X] Storage - https://longhorn.io
 [X] Sealed secrets
-[] Grafana and prometheus - for monitoring
+[X] Grafana and prometheus - for monitoring
 [X] Traefik - ingress controller
 [] Expose externally
