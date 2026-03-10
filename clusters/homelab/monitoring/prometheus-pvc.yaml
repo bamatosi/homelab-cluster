@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: prometheus-pvc
   namespace: monitoring
-  label:
+  labels:
     storage: prometheus
 spec:
   accessModes:

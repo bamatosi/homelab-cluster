@@ -3,8 +3,8 @@ kind: PersistentVolumeClaim
 metadata:
   name: alertmanager-pvc
   namespace: monitoring
-  label:
-    app: alertmanager
+  labels:
+    storage: alertmanager
 spec:
   accessModes:
     - ReadWriteOnce
