@@ -33,7 +33,7 @@ spec:
           cpu: "100m"
           memory: "256Mi"
 
-    instanceManager:
+    longhornInstanceManager:
       resources:
         limits:
           cpu: "1000m"
