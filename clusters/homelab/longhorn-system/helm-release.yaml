@@ -14,3 +14,34 @@ spec:
         name: longhorn-repository
       version: v1.11.0
   interval: 1m0s
+  values:
+    defaultSettings:
+      defaultReplicaCount: 2
+      defaultDataLocality: "best-effort"
+      # Disabling heavy hashing to save CPU/RAM on small nodes
+      # snapshotDataIntegrity: "disabled"
+      # Allow replicas to be scheduled on the same node if necessary (optional)
+      # replicaSoftAntiAffinity: true
+
+    # Resource Management (Crucial for 8GB/16GB nodes)
+    longhornManager:
+      resources:
+        limits:
+          cpu: "500m"
+          memory: "512Mi"
+        requests:
+          cpu: "100m"
+          memory: "256Mi"
+
+    longhornInstanceManager:
+      resources:
+        limits:
+          cpu: "1000m"
+          memory: "1Gi"
+        requests:
+          cpu: "250m"
+          memory: "512Mi"
+
+    persistence:
+      defaultClassReplicaCount: 2
+      defaultClass: true
