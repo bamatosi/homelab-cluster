@@ -7,6 +7,7 @@ spec:
   chart:
     spec:
       chart: kube-prometheus-stack
+      version: "84.0.0" # Pin version due to Lonhorn PV issue when rolling out new version
       sourceRef:
         kind: HelmRepository
         name: prometheus-community
@@ -39,7 +40,7 @@ spec:
         type: pvc
         storageClassName: longhorn
         accessModes: ["ReadWriteOnce"]
-        size: 10Gi
+        size: 12Gi
         # Optional: ensure dashboards are saved to disk
         finalizers:
           - kubernetes.io/pvc-protection
